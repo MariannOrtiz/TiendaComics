@@ -1,0 +1,169 @@
+#header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+#header.hide {
+    top: -60px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 30px;
+    background-color: #131313;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: absolute;
+    font-weight: 400;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+@mixin logo($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+.logo__img {
+    display: flex;
+    transition: 350ms;
+    @include logo(72.85px, 35px);
+}
+
+.logo__img:hover {
+    transform: scale(0.85);
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: 350ms;
+    font-weight: 500;
+}
+
+nav .mainMenu li a:hover {
+    color: $red;
+}
+nav .mainMenu li a:active {
+    transform: scale(0.85);
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.logo__anchor {
+    display: none;
+    pointer-events: none;
+}
+.logo__img2 {
+    display: none;
+}
+@media (max-width: 800px) {
+    nav {
+        background-color: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        position: fixed;
+        border-bottom: none;
+        box-shadow: none;
+    }
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #131313;
+        transition: 350ms;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        margin: 0px;
+        margin-right: 15px;
+    }
+    nav .openMenu {
+        display: block;
+        margin-right: 0px;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    @mixin logo($ancho, $alto) {
+        width: $ancho;
+        height: $alto;
+    }
+
+    .logo__img {
+        display: none;
+    }
+
+    .logo__img2 {
+        display: flex;
+        transition: 350ms;
+        @include logo(72.85px, 35px);
+    }
+
+    .logo__anchor {
+        pointer-events: all;
+    }
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+#boton__carrito {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: $red;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 350ms;
+}

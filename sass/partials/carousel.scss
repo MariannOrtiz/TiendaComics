@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: $red;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.marquee {
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.marquee p {
+    display: inline-block;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}

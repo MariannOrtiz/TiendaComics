@@ -1,0 +1,94 @@
+.footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: $red;
+    margin-top: 30px;
+    border-top: solid 1px white;
+    &__logo {
+        display: flex;
+        height: 70px;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &__img {
+            height: 35px;
+        }
+    }
+    &__title {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &__tlt {
+            font-size: 6vw;
+            font-weight: 500;
+            color: white;
+        }
+    }
+    &__contacto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding-top: 20px;
+        &__links {
+            display: flex;
+            width: 60%;
+            justify-content: space-around;
+            margin-top: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            overflow: hidden;
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+        }
+        &__copy {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding-top: 30px;
+            font-size: 0.7rem;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.fa-instagram {
+    transition: transform 350ms;
+}
+.fa-twitter {
+    transition: transform 350ms;
+}
+.fa-facebook {
+    transition: transform 350ms;
+}
+
+.fa-instagram:hover {
+    transition: 350ms;
+    transform: scale(1.2);
+}
+.fa-twitter:hover {
+    transition: 350ms;
+    transform: scale(1.2);
+}
+.fa-facebook:hover {
+    transition: 350ms;
+    transform: scale(1.2);
+}

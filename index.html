@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="https://kit.fontawesome.com/b457f9cfea.js" crossorigin="anonymous"></script>
+        <script defer src="./js/stock.js"></script>
+        <script defer src="./js/index.js"></script>
+        <script defer src="./js/modal.js"></script>
+        <title>ComicShop</title>
+    </head>
+    <body>
+        <header id="header">
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img class="logo__img" alt="" src="./images/logobatman.png" />
+                    </a>
+                </div>
+                <div class="openMenu"><i class="fa fa-bars"></i></div>
+                <ul class="mainMenu">
+                    <li>
+                        <a href="./index.html" class="logo__anchor"><img class="logo__img2" src="./images/logobatman.png" alt="" /></a>
+                    </li>
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./tienda.html">TIENDA</a></li>
+
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
+                </ul>
+                <div class="cart">
+                    <button id="boton__carrito">
+                        <i class="fa-solid fa-cart-shopping">
+                            <span id="contador__carrito"> 0</span>
+                        </i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <section class="background">
+            <div class="main">
+                <h1 class="main__title">TU CIUDAD NECESITA UN HEROE</h1>
+                <a href="./tienda.html">
+                    <button class="main__button">TIENDA</button>
+                </a>
+            </div>
+        </section>
+        <div class="wrapper">
+            <div class="marquee">
+                <p>
+                    NUEVOS COCMIS DISPONIBLES - NUEVOS COCMIS DISPONIBLES - NUEVOS COCMIS DISPONIBLES -NUEVOS COCMIS DISPONIBLES - NUEVOS
+                    COCMIS DISPONIBLES - NUEVOS COCMIS DISPONIBLES -NUEVOS COCMIS DISPONIBLES - NUEVOS COCMIS DISPONIBLES - NUEVOS COCMIS
+                    DISPONIBLES -
+                </p>
+                <p>
+                    NUEVOS COCMIS DISPONIBLES - NUEVOS COCMIS DISPONIBLES - NUEVOS COCMIS DISPONIBLES -NUEVOS COCMIS DISPONIBLES - NUEVOS
+                    COCMIS DISPONIBLES - NUEVOS COCMIS DISPONIBLES -NUEVOS COCMIS DISPONIBLES - NUEVOS COCMIS DISPONIBLES - NUEVOS COCMIS
+                    DISPONIBLES -
+                </p>
+            </div>
+        </div>
+
+        <div class="modal__contenedor">
+            <div class="modal__contenedor__carrito">
+                <h3>Carrito</h3>
+                <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                <div id="carrito__contenedor"></div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <button id="vaciar__carrito" class="boton-agregar">Vaciar carrito</button>
+                <div id="contenedor__comics"></div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__logo">
+                <img class="footer__logo__img" src="./images/logobatman.png" alt="" />
+            </div>
+            <div class="footer__title">
+                <p class="footer__title__tlt">COMICSHOP</p>
+            </div>
+            <div class="footer__contacto">
+                <p class="footer__contacto__title">CONTACTO</p>
+                <p class="footer__contacto__phone"><i class="fa-solid fa-phone"></i> 0800-Comic-1759</p>
+                <p class="footer__contacto__mail"><i class="fa-solid fa-at"></i> comicshop@example.com</p>
+                <div class="footer__contacto__links">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <p class="footer__contacto__copy">Copyright 2022 @Todos los derechos reservados</p>
+            </div>
+        </footer>
+        <script src="./js/header.js"></script>
+    </body>
+</html>
